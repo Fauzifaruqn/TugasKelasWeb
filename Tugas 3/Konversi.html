@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Konversi</title>
+	</head>
+	<body>
+		<p>
+		<h2>Grades</h2>
+		<h3>Enter your grade for each section</h3>
+		<TABLE BORDER=3 CELLSPACING=3 CELLPADDING=3>
+			<tr>
+				<td>Type</td>
+				<td>Weight</td>
+				<td>Grade</td>
+			<tr>
+			<tr>
+				<td>Homework</td>
+				<td>25%</td>
+				<td><input type="text" id="homework" size=2 value=""></td>
+			</tr>
+			<tr>
+				<td>Labs</td>
+				<td>20%</td>
+				<td><input type="text" id="labs" size=2 value=""></td>
+			</tr>
+			<tr>
+				<td>Midterm</td>
+				<td>25%</td>
+				<td><input type="text" id="midterm" size=2 value=""></td>
+			</tr>
+			<tr>
+				<td>Final Exam</td>
+				<td>30%</td>
+				<td><input type="text" id="finals" size=2 value=""></td>
+			</tr>
+		</table>
+		<br><br>
+		</p>
+		<input type="button" value="Calculate Grade" onclick="Grader();">
+		<hr>
+		<p><u>FINAL GRADE</u></p>
+		<p>
+			<p>TOTAL POINTS: <input type='text' id='total' value='' disabled></p>
+			<p>LETTER GRADE: <input type='text' id='letter' value='' disabled></p>
+		</p>
+		<script type="text/javascript">
+		function Grader() 
+		{
+		var am1=parseFloat(document.getElementById('homework').value*0.25);
+		var am2=parseFloat(document.getElementById('labs').value*0.20);
+		var am3=parseFloat(document.getElementById('midterm').value*0.25);
+		var am4=parseFloat(document.getElementById('finals').value*0.30);
+		var hw=homework*am1;
+		var lbs=labs*am2;
+		var mt=midterm*am3;
+		var fe=finals*am4;
+		var totalPoints = am1+am2+am3+am4;
+		
+		// Select letter grade!
+		if(totalPoints >= 81){
+			document.getElementById('letter').value = "A";
+		}
+		else if(80 >= totalPoints && totalPoints >= 71){
+			document.getElementById('letter').value = "AB";
+		}
+		else if(70 >= totalPoints && totalPoints >= 66){
+			document.getElementById('letter').value = "B";
+		}
+		else if(65 >= totalPoints && totalPoints >= 61){
+			document.getElementById('letter').value = "BC";
+		}
+		else if(60 >= totalPoints && totalPoints >= 56){
+			document.getElementById('letter').value = "C";
+		}
+		else if(55 >= totalPoints && totalPoints >= 41){
+			document.getElementById('letter').value = "D";
+		}
+		else{
+			document.getElementById('letter').value = "E";
+		}
+		
+		document.getElementById('total').value = totalPoints;
+		}
+		</script>
+	</body>
+</html>

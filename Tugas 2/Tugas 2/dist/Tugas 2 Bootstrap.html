@@ -1,0 +1,708 @@
+<!-- 
+	Nama Program:	Demo Bootstrap
+	Nama 			:Fauzi Faruq Nabbani
+	NPM			:	140810160007
+	Kelas			:A
+	
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="bootstrap.min.js"></script>
+	<style>
+		hr{
+		    height: 6px;
+		    background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+		    border: 0;
+		}
+
+		h2.subtittle{
+			text-align: center;	
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	
+		<!-- Tittle -->
+		<h1 style="text-align: center;">Bootstrap Demo</h1>
+
+		<!-- Horizontal Line -->
+		<hr>
+		
+		<!-- Table -->
+		<h2 class="subtittle" style="text-align: left";><b>1. Tampilan Table</b></h2><br>
+		<div class="row">
+			<div class="col-md-6">
+				<p>1. Basic</p>            
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Fauzi</td>
+							<td>Faruq</td>
+							<td>fauzifaruqn97@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Dzakia </td>
+							<td>Rayhana</td>
+							<td>rdzakia@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Ibnu</td>
+							<td>Ahsani</td>
+							<td>ibnu@gmail.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-6">
+				<p>2. Striped Rows</p>            
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Fauzi</td>
+							<td>Faruq</td>
+							<td>fauzifaruqn97@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Dzakia </td>
+							<td>Rayhana</td>
+							<td>rdzakia@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Ibnu</td>
+							<td>Ahsani</td>
+							<td>ibnu@gmail.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<p>3. Bordered Table</p>            
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+							<td>Fauzi</td>
+							<td>Faruq</td>
+							<td>fauzifaruqn97@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Dzakia </td>
+							<td>Rayhana</td>
+							<td>rdzakia@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Ibnu</td>
+							<td>Ahsani</td>
+							<td>ibnu@gmail.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-6">
+				<p>4. Hover Rows</p>            
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Fauzi</td>
+							<td>Faruq</td>
+							<td>fauzifaruqn97@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Dzakia </td>
+							<td>Rayhana</td>
+							<td>rdzakia@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Ibnu</td>
+							<td>Ahsani</td>
+							<td>ibnu@gmail.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<p>5. Condensed Table</p>            
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+							<td>Fauzi</td>
+							<td>Faruq</td>
+							<td>fauzifaruqn97@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Dzakia </td>
+							<td>Rayhana</td>
+							<td>rdzakia@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Ibnu</td>
+							<td>Ahsani</td>
+							<td>ibnu@gmail.com</td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+			<div class="col-md-6">
+				<p>6. Contextual Classes</p>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Default</td>
+							<td>Defaultson</td>
+							<td>def@somemail.com</td>
+						</tr>      
+						<tr class="success">
+							<td>Success</td>
+							<td>Doe</td>
+							<td>john@example.com</td>
+						</tr>
+						<tr class="danger">
+							<td>Danger</td>
+							<td>Moe</td>
+							<td>mary@example.com</td>
+						</tr>
+						<tr class="info">
+							<td>Info</td>
+							<td>Dooley</td>
+							<td>july@example.com</td>
+						</tr>
+						<tr class="warning">
+							<td>Warning</td>
+							<td>Refs</td>
+							<td>bo@example.com</td>
+						</tr>
+						<tr class="active">
+							<td>Active</td>
+							<td>Activeson</td>
+							<td>act@example.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Images -->
+		<h2 class="subtittle">2. Gambar</h2><br>
+		<div class="row">
+			<div class="col-md-4">
+			  <p>Rounded Corners</p>          
+			  <img src="Fau.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+			</div>
+			<div class="col-md-4">
+			  <p>Circle</p>            
+			  <img src="Fau2.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+			</div>
+			<div class="col-md-4">
+			  <p>Thumbnail</p>            
+			  <img src="pic01.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+			</div>
+		</div><br><br>
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="pic04.jpg">
+						<img src="pic03.jpg" alt="Facet 1" style="width:100%">
+						<div class="caption">
+							<p>Facet 1</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="pic03.jpg">
+						<img src="pic09.jpg" alt="Facet 2" style="width:100%">
+						<div class="caption">
+							<p>Facet 2</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="Images/facet3.jpg">
+						<img src="pic06.jpg" alt="Facet 3" style="width:100%">
+						<div class="caption">
+							<p>Facet 3w</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Button -->
+		<h2 class="subtittle" style="text-align: left;">3 .Tombol</h2><br>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-8">
+				<button type="button" class="btn">1. Basic</button>
+				<button type="button" class="btn btn-default">2. Default</button>
+				<button type="button" class="btn btn-primary">3. Primary</button>
+				<button type="button" class="btn btn-success">4. Success</button>
+				<button type="button" class="btn btn-info">5. Info</button>
+				<button type="button" class="btn btn-warning">6. Warning</button>
+				<button type="button" class="btn btn-danger">7. Danger</button>
+				<button type="button" class="btn btn-link">8. Link</button> 
+			</div>
+			<div class="col-md-1"></div>
+		</div><br><br>
+
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<button type="button" class="btn btn-primary btn-lg">Large</button>
+				<button type="button" class="btn btn-primary btn-md">Medium</button>
+				<button type="button" class="btn btn-primary btn-sm">Small</button>
+				<button type="button" class="btn btn-primary btn-xs">XSmall</button>
+			</div>
+			<div class="col-md-4">
+				<button type="button" class="btn btn-primary active">Active Primary</button>
+				<button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Alerts -->
+		<h2 class="subtittle" style="text-align:left;">4. Alerts</h2><br>
+		<p style="text-align:left;"">1. Alerts</p>
+		<div class="alert alert-success">
+			<strong>2. Success!</strong> This alert box could indicate a successful or positive action.
+		</div>
+		<div class="alert alert-info">
+			<strong>3. Info!</strong> This alert box could indicate a neutral informative change or action.
+		</div>
+		<div class="alert alert-warning">
+			<strong>4. Warning!</strong> This alert box could indicate a warning that might need attention.
+		</div>
+		<div class="alert alert-danger">
+			<strong>5. Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+		</div><br>
+		<p>2. Alert Links</p>
+		<div class="alert alert-success">
+			<strong>1. Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+		</div>
+		<div class="alert alert-info">
+			<strong>2. Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+		</div>
+		<div class="alert alert-warning">
+			<strong>3. Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+		</div>
+		<div class="alert alert-danger">
+			<strong>4. Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+		</div><br>
+		<p>3. Closing Alert Normal</p>
+		<div class="alert alert-success alert-dismissable">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+			<strong>1. Success!</strong> This alert box could indicate a successful or positive action.
+		</div><br>
+		<p>4. Closing Alert Animated</p>
+		<div class="alert alert-success alert-dismissable fade in">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<strong>1. Success!</strong> This alert box could indicate a successful or positive action.
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Icon -->
+		<div class="row">
+			<h2 class="subtittle" style="text-align: left">5. Icons</h2><br>
+			<div class="col-md-3">
+				<p>Asterisk icon: <span class="glyphicon glyphicon-asterisk"></span></p>    
+			</div>
+			<div class="col-md-3">
+				<p>Envelope icon as a link:
+					<a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+				</p>
+			</div>
+			<div class="col-md-3">
+				<p>film icon: <span class="glyphicon glyphicon-film"></span></p>
+			</div>
+			<div class="col-md-3">
+				<p>Trash icon: <span class="glyphicon glyphicon-trash"></span></p>      
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<p>Search icon on a button:
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-search"></span> Search
+					</button>
+				</p>
+				
+			</div>
+			<div class="col-md-4">
+				<p>Search icon on a styled button:
+					<button type="button" class="btn btn-info">
+						<span class="glyphicon glyphicon-search"></span> Search
+					</button>
+				</p>
+				
+			</div>
+			<div class="col-md-4">
+				<p>Print icon on a styled film button:
+					<a href="#" class="btn btn-success btn-lg">
+						<span class="glyphicon glyphicon-film"></span> Film 
+					</a>
+				</p> 
+				
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Pagination -->
+		<h2 class="subtittle" style="text-align:left;">6. Pagination</h2><br>
+		<div class="row">
+			<div class="col-md-6">
+			<p>1. Basic</p>
+				<ul class="pagination">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+			<p>2. Active state</p>
+				<ul class="pagination">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li class="active"><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<p>3. Disabled state</p>
+				<ul class="pagination">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li class="disabled"><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<p>4. Pagination Size small</p>
+				<ul class="pagination pagination-sm">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					
+				</ul>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Breadcrumb -->
+		<h2 class="subtittle">Breadcrumb</h2><br>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Private</a></li>
+				  <li><a href="#">Pictures</a></li>
+				  <li class="active">Vacation</li> 
+				</ul>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- List -->
+		<h2 class="subtittle">List</h2><br>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Basic List Group</p>
+				<ul class="list-group">
+					<li class="list-group-item">First item</li>
+					<li class="list-group-item">Second item</li>
+					<li class="list-group-item">Third item</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<p>List Group With Badges</p>
+				<ul class="list-group">
+					<li class="list-group-item">New <span class="badge">12</span></li>
+					<li class="list-group-item">Deleted <span class="badge">5</span></li>
+					<li class="list-group-item">Warnings <span class="badge">3</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>List Group With Badges</p>
+				<ul class="list-group">
+					<li class="list-group-item">New <span class="badge">12</span></li>
+					<li class="list-group-item">Deleted <span class="badge">5</span></li>
+					<li class="list-group-item">Warnings <span class="badge">3</span></li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<p>Active Item in a List Group</p>
+				<div class="list-group">
+					<a href="#" class="list-group-item active">First item</a>
+					<a href="#" class="list-group-item">Second item</a>
+					<a href="#" class="list-group-item">Third item</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>List Group With a Disabled Item</p>
+				<div class="list-group">
+					<a href="#" class="list-group-item disabled">First item</a>
+					<a href="#" class="list-group-item">Second item</a>
+					<a href="#" class="list-group-item">Third item</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<p>Linked Items With Contextual Classes</p>
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-success">First item</a>
+					<a href="#" class="list-group-item list-group-item-info">Second item</a>
+					<a href="#" class="list-group-item list-group-item-warning">Third item</a>
+					<a href="#" class="list-group-item list-group-item-danger">Fourth item</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Panel -->
+		<h2 class="subtittle">Panel</h2><br>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Basic Panel</p>
+			  	<div class="panel panel-default">
+			   	 <div class="panel-body">A Basic Panel</div>
+			  	</div>
+			</div>
+			<div class="col-md-6">
+				<p>Panel Heading</p>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">Panel Heading</div>
+				    <div class="panel-body">Panel Content</div>
+				  </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Panel Footer</p>
+			  <div class="panel panel-default">
+			    <div class="panel-heading">Panel Heading</div>
+			    <div class="panel-body">Panel Content</div>
+			    <div class="panel-footer">Panel Footer</div>
+			  </div>
+			</div>
+			<div class="col-md-6">
+				<p>Panel Group</p>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">Panel Header</div>
+						<div class="panel-body">Panel Content</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Panels with Contextual Classes</p>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">Panel with panel-default class</div>
+						<div class="panel-body">Panel Content</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Panel with panel-primary class</div>
+						<div class="panel-body">Panel Content</div>
+					</div>
+					<div class="panel panel-success">
+						<div class="panel-heading">Panel with panel-success class</div>
+						<div class="panel-body">Panel Content</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<p>Panels with Contextual Classes</p>
+				<div class="panel panel-info">
+					<div class="panel-heading">Panel with panel-info class</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+				<div class="panel panel-warning">
+					<div class="panel-heading">Panel with panel-warning class</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+				<div class="panel panel-danger">
+					<div class="panel-heading">Panel with panel-danger class</div>
+					<div class="panel-body">Panel Content</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Navigation Bar -->
+		<h2 class="subtittle">Navigation Bar</h2><br>
+		<div class="row">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">WebSiteName</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Page 1</a></li>
+						<li><a href="#">Page 2</a></li>
+						<li class="dropdown">
+				        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 3
+				        <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				          <li><a href="#">Page 3-1</a></li>
+				          <li><a href="#">Page 3-2</a></li>
+				          <li><a href="#">Page 3-3</a></li>
+				        </ul>
+				      </li>
+					</ul>
+					<form class="navbar-form navbar-left">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<button class="btn btn-danger navbar-btn">Button</button>
+					<ul class="nav navbar-nav navbar-right">
+				      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			    </ul>
+				</div>
+			</nav>
+		</div>	
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Navigation Tab -->
+		<h2 class="subtittle">Navigation Tab</h2><br>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Submenu 1-1</a></li>
+							<li><a href="#">Submenu 1-2</a></li>
+							<li><a href="#">Submenu 1-3</a></li> 
+						</ul>
+					</li>
+					<li><a href="#">Menu 2</a></li>
+					<li><a href="#">Menu 3</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Breadcrumb -->
+		<h2 class="subtittle">Breadcrumb</h2><br>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Private</a></li>
+				  <li><a href="#">Pictures</a></li>
+				  <li class="active">Vacation</li> 
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

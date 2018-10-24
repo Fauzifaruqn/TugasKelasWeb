@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Kalkulator </title>
+</head>
+<body>
+<script >
+	function Tambah(){
+		var a =	document.getElementById("AngkaPertama").value;
+		var b = document.getElementById	("AngkaKedua").value;
+		var c = parseInt(a)+parseInt(b);
+		document.getElementById("HasilPenjumlahan").innerHTML = c;
+
+	}
+	function Kurang(){
+		var a =	document.getElementById("AngkaPertama").value;
+		var b = document.getElementById	("AngkaKedua").value;
+		var c = parseInt(a)-parseInt(b);
+		document.getElementById("HasilPenjumlahan").innerHTML = c;
+
+	}
+	function Kali(){
+		var a =	document.getElementById("AngkaPertama").value;
+		var b = document.getElementById	("AngkaKedua").value;
+		var c = parseInt(a)*parseInt(b);
+		document.getElementById("HasilPenjumlahan").innerHTML = c;
+
+	}
+	function Bagi(){
+		var a =	document.getElementById("AngkaPertama").value;
+		var b = document.getElementById	("AngkaKedua").value;
+		var c = parseInt(a)/parseInt(b);
+		document.getElementById("HasilPenjumlahan").innerHTML = c;
+	}
+</script>
+
+  <form>
+			<fieldset style="width:400px">
+				<h1>Ini adalah Kalkulator</h1>
+				<br>
+				<p>Angka Pertama : <input id="AngkaPertama" type="number"></p>
+				<p>Angka Kedua : <input id="AngkaKedua" type="number"></p>
+				<br>
+				<button type="button" onclick="Tambah()">Tambah</button>
+				<button type="button" onclick="Kurang()">Kurang</button>
+				<button type="button" onclick="Kali()">Kali</button>		
+				<button type="button" onclick="Bagi()">Bagi</button>			
+				<br>
+				<br>
+
+				Hasil  :
+				<p id="HasilPenjumlahan"></p>
+			</fieldset>
+		</form>
+</body>
+</html>
